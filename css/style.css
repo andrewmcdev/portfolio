@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a0d27;
+}
+
+h1 {
+  color: #d2aa39;
+  font-size: 3rem;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  background-image: url("../img/Hero-Background.png");
+  padding-bottom: 50px;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.logo {
+  font-weight: 600;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.main-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #d2aa39;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.main-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+/* HEADER HERO */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-welcome h1 {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.hero-welcome p {
+  font-weight: 300;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  width: 50%;
+}
+
+.profile {
+  width: 15rem;
+  margin-bottom: 40px;
+}
+
+.twitter-handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.twitter-handle p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.twitter-handle img {
+  max-width: 25px;
+  max-height: 25px;
+}
